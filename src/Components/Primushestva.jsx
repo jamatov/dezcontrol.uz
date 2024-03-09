@@ -5,12 +5,12 @@ import img3 from '../Images/p3.svg'
 
 export default function Primushestva() {
   return (
-    <section className='Primushestva'>
+    <section id='Primushestva' className='Primushestva'>
       <div className="container">
         <h2 className='section-tittle'>Почему вы должны выбрать именно нас</h2>
         <div className="row">
           
-          <div className="col-md-4">
+          <div className="col-md-4 mb-3">
             <div className="card">
               <div className="card-body">
                 <img src={img1} alt="" />
@@ -20,7 +20,7 @@ export default function Primushestva() {
             </div>
           </div>
 
-          <div className="col-md-4">
+          <div className="col-md-4 mb-3">
             <div className="card">
               <div className="card-body">
                 <img src={img2} alt="" />
@@ -30,7 +30,7 @@ export default function Primushestva() {
             </div>
           </div>
 
-          <div className="col-md-4">
+          <div className="col-md-4 mb-3">
             <div className="card">
               <div className="card-body">
                 <img src={img3  } alt="" />

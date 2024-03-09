@@ -3,14 +3,16 @@ import location from '../Images/footer-location.svg'
 import phone from '../Images/footer-phone.svg'
 import instagram from '../Images/footer-insta.svg'
 import telegram from '../Images/footer-tg.svg'
+import { Link } from 'react-scroll'
+
 
 export default function Footer() {
   return (
     <footer className='Footer'>
       <div className="container">
         <div className="row">
-          <div className='col-md-6'>
-            <h3>Наша компания DezControl предоставляет весь спектр санитарных услуг в Ташкенте. Дезинфекция, дезинсекция и дератизация в Ташкенте.</h3>
+          <div className='col-md-6 mb-4'>
+            <h3>Наша компания DezEffect предоставляет весь спектр санитарных услуг в Ташкенте. Дезинфекция, дезинсекция и дератизация в Ташкенте.</h3>
             <div className='address'>
               <img src={location} alt="" />
               <p>ТТЗ-1, М.Улугбекский р-н,Ташкент | Zipcode: 100142</p>
@@ -23,8 +25,12 @@ export default function Footer() {
 
             <h3>Our Social Networks</h3>
             <div className="d-flex gap-4">
-              <img src={instagram} alt="" />
-              <img src={telegram} alt="" />
+              <a target='_blank' href="https://www.instagram.com/dezinsect.uz/">
+                <img src={instagram} alt="" />
+              </a>
+              <a target='_blank' href="https://t.me/dezinsect">
+                <img src={telegram} alt="" />
+              </a>
             </div>
           </div>
 
@@ -33,22 +39,22 @@ export default function Footer() {
               <div>
                 <h3>Навигация</h3>
                 <ul className='footer-list'>
-                  <li><a href="">Главная</a></li>
-                  <li><a href="">Услуги</a></li>
-                  <li><a href="">О нас</a></li>
-                  <li><a href="">Oставить заказ</a></li>
+                  <li><Link activeClass="active" spy={true} smooth={true} offset={-120} duration={100} to='Header'>Главная</Link></li>
+                  <li><Link activeClass="active" spy={true} smooth={true} offset={-120} duration={100} to='About'>О нас</Link></li>
+                  <li><Link activeClass="active" spy={true} smooth={true} offset={-120} duration={100} to='Services'>Услуги</Link></li>
+                  <li><Link activeClass="active" spy={true} smooth={true} offset={-120} duration={100} to='Form'>Oставить заказ</Link></li>
                 </ul>
               </div>
 
               <div>
                 <h3>Услуги</h3>
                 <ul className='footer-list'>
-                  <li><a href="">Дезинфекция</a></li>
-                  <li><a href="">Дезинсекция</a></li>
-                  <li><a href="">Дератизация</a></li>
-                  <li><a href="">Пестконтроль</a></li>
-                  <li><a href="">Дезодорация</a></li>
-                  <li><a href="">Уничтожение</a></li>
+                  <li><Link activeClass="active" spy={true} smooth={true} offset={-120} duration={100} to='Services'>Дезинфекция</Link></li>
+                  <li><Link activeClass="active" spy={true} smooth={true} offset={-120} duration={100} to='Services'>Дезинсекция</Link></li>
+                  <li><Link activeClass="active" spy={true} smooth={true} offset={-120} duration={100} to='Services'>Дератизация</Link></li>
+                  <li><Link activeClass="active" spy={true} smooth={true} offset={-120} duration={100} to='Services'>Пестконтроль</Link></li>
+                  <li><Link activeClass="active" spy={true} smooth={true} offset={-120} duration={100} to='Services'>Дезодорация</Link></li>
+                  <li><Link activeClass="active" spy={true} smooth={true} offset={-120} duration={100} to='Services'>Уничтожение</Link></li>
                 </ul>
               </div>
             </div>
