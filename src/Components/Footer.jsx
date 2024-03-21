@@ -18,12 +18,14 @@ export default function Footer() {
               <p>ТТЗ-1, М.Улугбекский р-н,Ташкент | Zipcode: 100142</p>
             </div>
 
-            <div className='address mb-5'>
-              <img src={phone} alt="" />
-              <p>+998 93 102-70-27</p>
+            <a href="tel:+998954333344">
+              <div className='address mb-5'>
+                <img src={phone} alt="" />
+                <p>+99895 433 33 44</p>
             </div>
+            </a>
 
-            <h3>Our Social Networks</h3>
+            <h3>Наши социальные сети</h3>
             <div className="d-flex gap-4">
               <a target='_blank' href="https://www.instagram.com/dezinsect.uz/">
                 <img src={instagram} alt="" />
